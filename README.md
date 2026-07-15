@@ -12,10 +12,14 @@ Necesitas tener:
 
 ## 2. Instalar
 
+Repo: <https://github.com/bsperezb/smk-claude-kit>
+
 ```bash
-claude plugin marketplace add bsperezb/smk-claude-kit
+claude plugin marketplace add https://github.com/bsperezb/smk-claude-kit
 claude plugin install smk-tcc@smk-claude-kit
 ```
+
+> `claude plugin marketplace add bsperezb/smk-claude-kit` (forma corta owner/repo) también funciona.
 
 **Verifica:** abre Claude Code → `/plugin` debe mostrar `smk-tcc` *enabled*, y en `/mcp` deben aparecer `context7`, `sentry`, `markitdown`, `playwright` y `codegraph`. Sentry pide login OAuth la primera vez; codegraph tarda un poco la primera vez (descarga el paquete).
 
