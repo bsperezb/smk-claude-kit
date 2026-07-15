@@ -9,7 +9,6 @@ Necesitas tener:
 - **Claude Code** con sesión iniciada, y **Node.js ≥ 18**.
 - **`uv`** — Linux/macOS: `curl -LsSf https://astral.sh/uv/install.sh | sh` · Windows: `powershell -c "irm https://astral.sh/uv/install.ps1 | iex"`
 - **`CONTEXT7_API_KEY`** — crea tu key gratuita en [context7.com](https://context7.com) y déjala como variable de entorno (Linux/macOS: `export CONTEXT7_API_KEY="..."` en tu `~/.bashrc`/`~/.zshrc` · Windows: `setx CONTEXT7_API_KEY "..."`). Abre una terminal nueva después.
-- **Acceso a este repo privado** (SSH configurado o `gh auth login`).
 
 ## 2. Instalar
 
