@@ -43,13 +43,13 @@ claude plugin update smk-tcc
 | MCP | `sentry` | Consulta de issues y eventos de Sentry (OAuth la primera vez) |
 | MCP | `markitdown` | Conversión de documentos (PDF, DOCX, etc.) a Markdown (requiere `uv`) |
 | MCP | `playwright` | Automatización de navegador para pruebas y scraping |
+| MCP | `codegraph` | Inteligencia de código local-first: grafo de símbolos, llamadas y dependencias (`@colbymchenry/codegraph` vía npx, multiplataforma) |
+
+> **codegraph** solo responde en repos indexados: la primera vez en cada repo ejecuta `npx -y @colbymchenry/codegraph init` (crea `.codegraph/`; agrégalo al `.gitignore` si el equipo no quiere versionarlo). Indexar cada repo es decisión de cada dev.
 
 ## Opcionales recomendados (no incluidos en el plugin)
 
-Dependen de binarios instalados localmente, por eso no van en el plugin:
-
-- **[CodeGraph](https://codegraph.dev)** — indexado y exploración de código como grafo.
-- **[Pencil](https://pencil.dev)** — diseño de interfaces en archivos `.pen`.
+- **[Pencil](https://pencil.dev)** — diseño de interfaces en archivos `.pen` (depende de un binario local, por eso no va en el plugin).
 
 ## Cómo contribuir / extender
 
