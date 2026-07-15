@@ -1,0 +1,16 @@
+{
+  "name": "smk-claude-kit",
+  "owner": {
+    "name": "SMK Online"
+  },
+  "metadata": {
+    "description": "Marketplace privado de plugins de Claude Code del equipo SMK: estándares compartidos (agentes, MCPs y skills) para proyectos TCC."
+  },
+  "plugins": [
+    {
+      "name": "smk-tcc",
+      "source": "./plugins/smk-tcc",
+      "description": "Estándares del equipo SMK para proyectos TCC: agentes, MCPs y skills compartidos."
+    }
+  ]
+}
