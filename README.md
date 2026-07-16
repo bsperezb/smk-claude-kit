@@ -9,6 +9,7 @@ Necesitas tener:
 - **Claude Code** con sesión iniciada, y **Node.js ≥ 18**.
 - **`uv`** — Linux/macOS: `curl -LsSf https://astral.sh/uv/install.sh | sh` · Windows: `powershell -c "irm https://astral.sh/uv/install.ps1 | iex"`
 - **`CONTEXT7_API_KEY`** — crea tu key gratuita en [context7.com](https://context7.com) y déjala como variable de entorno (Linux/macOS: `export CONTEXT7_API_KEY="..."` en tu `~/.bashrc`/`~/.zshrc` · Windows: `setx CONTEXT7_API_KEY "..."`). Abre una terminal nueva después.
+- **OpenSpec CLI** (para los comandos `/smk-tcc:opsx:*`): `npm install -g @fission-ai/openspec@latest`
 
 ## 2. Instalar
 
@@ -35,6 +36,8 @@ claude plugin update smk-tcc
 |---|---|---|
 | Agente | `git-workflow` | Convenciones de commits del equipo (inglés, Conventional Commits, sin co-authored-by) |
 | Skill | `pdf-from-markdown` | Generar PDFs desde Markdown (multiplataforma) |
+| Comandos | `/smk-tcc:opsx:*` | [OpenSpec](https://openspec.dev/) — desarrollo spec-driven: `propose`, `apply`, `archive`, `explore`, `sync`, `update` |
+| Skills | `openspec-*` | Skills de apoyo de OpenSpec (propose/apply/archive/explore/sync/update) |
 | MCP | `context7` | Docs actualizadas de librerías/frameworks |
 | MCP | `sentry` | Consultar issues y eventos de Sentry |
 | MCP | `markitdown` | Convertir PDF/DOCX/etc. a Markdown |
@@ -42,6 +45,8 @@ claude plugin update smk-tcc
 | MCP | `codegraph` | Exploración de código como grafo (símbolos, llamadas, dependencias) |
 
 > **codegraph** solo responde en repos indexados: la primera vez en cada repo corre `npx -y @colbymchenry/codegraph init` (crea `.codegraph/`; agrégalo al `.gitignore`).
+
+> **OpenSpec** no es un MCP — es un CLI (`openspec`). El plugin trae los slash commands y skills, pero cada repo necesita la estructura `openspec/` la primera vez: corre `openspec init --tools none` en la raíz del repo (`--tools none` para no duplicar los comandos que ya trae el plugin). Los cambios/especificaciones viven en `openspec/` dentro del repo.
 
 ## Contribuir
 

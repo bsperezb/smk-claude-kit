@@ -1,6 +1,6 @@
 {
   "name": "smk-tcc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Estándares del equipo SMK para proyectos TCC: agentes, MCPs y skills compartidos.",
   "author": { "name": "SMK Online" }
 }
