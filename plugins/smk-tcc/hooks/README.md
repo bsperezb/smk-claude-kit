@@ -1,6 +1,10 @@
-# Hooks (futuro — no activos)
+# Hooks
 
-Este plugin NO instala hooks por ahora. Candidatos documentados para una versión futura:
+## Activos (`hooks.json`)
+
+- **SessionStart**: corre `statusline/install.js` (Node). Configura la statusline del equipo en el `~/.claude/settings.json` del usuario la primera vez. Es idempotente: si el usuario ya tiene una statusline propia no la toca, y si el plugin cambió de ruta al actualizarse, la corrige.
+
+## Candidatos futuros (no activos)
 
 - **PostToolUse (Edit|Write)**: correr `npx eslint --fix` sobre archivos `.js`/`.vue` editados en repos con ESLint configurado.
 - **PreToolUse (Bash)**: bloquear commits/push directos a ramas protegidas (`master`, `main`, `qa`).

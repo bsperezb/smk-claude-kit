@@ -37,6 +37,7 @@ claude plugin update smk-tcc
 | Agente | `git-workflow` | Convenciones de commits del equipo (inglés, Conventional Commits, sin co-authored-by) |
 | Skill | `pdf-from-markdown` | Generar PDFs desde Markdown (multiplataforma) |
 | Comandos | `/smk-tcc:opsx:*` | [OpenSpec](https://openspec.dev/) — desarrollo spec-driven: `propose`, `apply`, `archive`, `explore`, `sync`, `update` |
+| Statusline | `statusline` | Barra de estado del equipo: modelo + effort, contexto, tokens, duración y rate limits. Se instala sola al iniciar sesión |
 | Skills | `openspec-*` | Skills de apoyo de OpenSpec (propose/apply/archive/explore/sync/update) |
 | MCP | `context7` | Docs actualizadas de librerías/frameworks |
 | MCP | `sentry` | Consultar issues y eventos de Sentry |
@@ -45,6 +46,8 @@ claude plugin update smk-tcc
 | MCP | `codegraph` | Exploración de código como grafo (símbolos, llamadas, dependencias) |
 
 > **codegraph** solo responde en repos indexados: la primera vez en cada repo corre `npx -y @colbymchenry/codegraph init` (crea `.codegraph/`; agrégalo al `.gitignore`).
+
+> **Statusline**: un hook `SessionStart` la configura en tu `~/.claude/settings.json` la primera vez que abres Claude Code con el plugin activo (reinicia la sesión para verla). Si ya tienes una statusline propia configurada, el plugin **no la toca**. Para desactivarla, borra la clave `statusLine` de `~/.claude/settings.json`.
 
 > **OpenSpec** no es un MCP — es un CLI (`openspec`). El plugin trae los slash commands y skills, pero cada repo necesita la estructura `openspec/` la primera vez: corre `openspec init --tools none` en la raíz del repo (`--tools none` para no duplicar los comandos que ya trae el plugin). Los cambios/especificaciones viven en `openspec/` dentro del repo.
 
