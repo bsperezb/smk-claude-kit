@@ -36,6 +36,7 @@ claude plugin update smk-tcc
 |---|---|---|
 | Agente | `git-workflow` | Convenciones de commits del equipo (inglés, Conventional Commits, sin co-authored-by) |
 | Skill | `pdf-from-markdown` | Generar PDFs desde Markdown (multiplataforma) |
+| Skill | `code-reviewer` | Revisión de código (PRs, calidad, checklist) para TS/JS/Python/Go/Swift/Kotlin, requiere Python |
 | Comandos | `/smk-tcc:opsx:*` | [OpenSpec](https://openspec.dev/) — desarrollo spec-driven: `propose`, `apply`, `archive`, `explore`, `sync`, `update` |
 | Statusline | `statusline` | Barra de estado del equipo: modelo + effort, contexto, tokens, duración y rate limits. Se instala sola al iniciar sesión |
 | Skills | `openspec-*` | Skills de apoyo de OpenSpec (propose/apply/archive/explore/sync/update) |
