@@ -22,12 +22,19 @@ claude plugin install smk-tcc@smk-claude-kit
 
 > `claude plugin marketplace add bsperezb/smk-claude-kit` (forma corta owner/repo) también funciona.
 
+Este marketplace también sirve [`ponytail`](https://github.com/DietrichGebert/ponytail) (de terceros, no mantenido por SMK):
+
+```bash
+claude plugin install ponytail@smk-claude-kit
+```
+
 **Verifica:** abre Claude Code → `/plugin` debe mostrar `smk-tcc` *enabled*, y en `/mcp` deben aparecer `context7`, `sentry`, `markitdown`, `playwright` y `codegraph`. Sentry pide login OAuth la primera vez; codegraph tarda un poco la primera vez (descarga el paquete).
 
 ## 3. Actualizar
 
 ```bash
 claude plugin update smk-tcc
+claude plugin update ponytail
 ```
 
 ## Qué incluye
