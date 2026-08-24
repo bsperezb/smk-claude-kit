@@ -11,6 +11,14 @@
       "name": "smk-tcc",
       "source": "./plugins/smk-tcc",
       "description": "Estándares del equipo SMK para proyectos TCC: agentes, MCPs y skills compartidos."
+    },
+    {
+      "name": "ponytail",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/DietrichGebert/ponytail.git"
+      },
+      "description": "Modo 'lazy senior dev' para agentes: fuerza la solución más simple que funcione (YAGNI, stdlib primero, una línea antes que cincuenta). De terceros (DietrichGebert), referenciado desde su repo."
     }
   ]
 }
