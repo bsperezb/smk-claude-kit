@@ -22,7 +22,7 @@ claude plugin install smk-tcc@smk-claude-kit
 
 > `claude plugin marketplace add bsperezb/smk-claude-kit` (forma corta owner/repo) también funciona.
 
-Este marketplace también sirve [`ponytail`](https://github.com/DietrichGebert/ponytail) (de terceros, no mantenido por SMK):
+Este marketplace también sirve [`ponytail`](https://github.com/DietrichGebert/ponytail) (de terceros, no mantenido por SMK; versión fijada, no sigue su rama por defecto):
 
 ```bash
 claude plugin install ponytail@smk-claude-kit
@@ -56,6 +56,8 @@ claude plugin update ponytail
 > **codegraph** solo responde en repos indexados: la primera vez en cada repo corre `npx -y @colbymchenry/codegraph init` (crea `.codegraph/`; agrégalo al `.gitignore`).
 
 > **Statusline**: un hook `SessionStart` la configura en tu `~/.claude/settings.json` la primera vez que abres Claude Code con el plugin activo (reinicia la sesión para verla). Si ya tienes una statusline propia configurada, el plugin **no la toca**. Para desactivarla, borra la clave `statusLine` de `~/.claude/settings.json`.
+
+> **ponytail**: otro hook `SessionStart` preconfigura su nivel por defecto en `"lite"` (menos agresivo que su `"full"` de fábrica) escribiendo `~/.config/ponytail/config.json`. Si ya tienes `PONYTAIL_DEFAULT_MODE` o un `defaultMode` propio configurado, no se toca. Para cambiarlo: `/ponytail full` (u otro nivel) en cualquier sesión, o editando ese archivo.
 
 > **OpenSpec** no es un MCP — es un CLI (`openspec`). El plugin trae los slash commands y skills, pero cada repo necesita la estructura `openspec/` la primera vez: corre `openspec init --tools none` en la raíz del repo (`--tools none` para no duplicar los comandos que ya trae el plugin). Los cambios/especificaciones viven en `openspec/` dentro del repo.
 

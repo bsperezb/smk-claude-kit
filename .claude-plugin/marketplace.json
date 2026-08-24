@@ -16,7 +16,9 @@
       "name": "ponytail",
       "source": {
         "source": "url",
-        "url": "https://github.com/DietrichGebert/ponytail.git"
+        "url": "https://github.com/DietrichGebert/ponytail.git",
+        "ref": "v4.9.0",
+        "sha": "0a4dd63ad4541f4f655c4108a295916f3c1d8fda"
       },
       "description": "Modo 'lazy senior dev' para agentes: fuerza la solución más simple que funcione (YAGNI, stdlib primero, una línea antes que cincuenta). De terceros (DietrichGebert), referenciado desde su repo."
     }
