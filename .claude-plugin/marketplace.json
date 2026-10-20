@@ -21,6 +21,36 @@
         "sha": "0a4dd63ad4541f4f655c4108a295916f3c1d8fda"
       },
       "description": "Modo 'lazy senior dev' para agentes: fuerza la solución más simple que funcione (YAGNI, stdlib primero, una línea antes que cincuenta). De terceros (DietrichGebert), referenciado desde su repo."
+    },
+    {
+      "name": "image-preview",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/midudev/better-claude.git",
+        "path": "plugins/image-preview",
+        "sha": "cff79474a03f4246863260ed21de590b61852c80"
+      },
+      "description": "Pasa el puntero sobre un [Image #N] pegado para ver la imagen. Requiere la interfaz fullscreen (\"tui\": \"fullscreen\"). De terceros (midudev), referenciado desde su repo."
+    },
+    {
+      "name": "narrator",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/midudev/better-claude.git",
+        "path": "plugins/narrator",
+        "sha": "cff79474a03f4246863260ed21de590b61852c80"
+      },
+      "description": "/narrator (o clic en el footer): al terminar cada turno Claude dice en voz alta lo que hizo, en tu idioma, con la mejor voz gratuita del sistema. De terceros (midudev), referenciado desde su repo."
+    },
+    {
+      "name": "after",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/midudev/better-claude.git",
+        "path": "plugins/after",
+        "sha": "cff79474a03f4246863260ed21de590b61852c80"
+      },
+      "description": "Cola de prompts: /after <tarea> la ejecuta cuando Claude termina la actual, sin desviarlo. /after sin argumentos abre la cola para editarla. De terceros (midudev), referenciado desde su repo."
     }
   ]
 }
