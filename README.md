@@ -57,7 +57,7 @@ claude plugin update after
 | Tipo | Nombre | Para qué |
 |---|---|---|
 | Agente | `git-workflow` | Convenciones de commits del equipo (inglés, Conventional Commits, sin co-authored-by) |
-| Skill | `pdf-from-markdown` | Generar PDFs desde Markdown (multiplataforma) |
+| Skill | `pdf-from-markdown` | Generar PDFs desde Markdown (multiplataforma). Con marca: pide "con estilos SMk" (requiere estar en la org de claude.ai, que provee el skill `smk-branding`; también cubre Word y diapositivas) |
 | Skill | `code-reviewer` | Revisión de código (PRs, calidad, checklist) para TS/JS/Python/Go/Swift/Kotlin, requiere Python |
 | Comandos | `/smk-tcc:opsx:*` | [OpenSpec](https://openspec.dev/) — desarrollo spec-driven: `propose`, `apply`, `archive`, `explore`, `sync`, `update` |
 | Statusline | `statusline` | Barra de estado del equipo: modelo + effort, contexto, tokens, duración y rate limits. Se instala sola al iniciar sesión |
